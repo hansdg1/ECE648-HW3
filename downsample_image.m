@@ -7,13 +7,16 @@ function [ upscale ] = downsample_image( input_img, factor )
 
 
 % Downsampling
+% Factor is the amount we're downsampling by
 downsampled = input_img( 1 : factor : end, 1 : factor : end);
 
 % Upscaling
+% upscale_factor ex when factor=4  -- 4/(4*4) = 0.25
 upscale_factor = factor / (factor * factor);
 upscale = downsampled( upscale_factor:upscale_factor:end, upscale_factor:upscale_factor:end );
 
 
+% Write the picture to a file
 filename = ['lena_downsampled_' num2str(factor) '.bmp'];
 imwrite(upscale,filename,'bmp');
 end
