@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Project: ECE 648 HW3 %
+% Author: Hans Guthrie %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
 function [ upscale ] = downsample_image( input_img, factor )
 % DOWNSAMPLE Downsamples the input image, and then upscales 
 %   Downsamples the input image by the given factor, upscales it, and returns

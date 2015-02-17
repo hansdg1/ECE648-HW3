@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Project: ECE 648 HW3 %
+% Author: Hans Guthrie %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
 function [ quantized ] = quantize_image( input_img, bits )
 %QUANTIZE_IMAGE Quantizes the input image to the specified 'bits'/pixel
 % input_img     : the image to be quantized
